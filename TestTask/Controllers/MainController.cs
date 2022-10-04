@@ -8,7 +8,7 @@ namespace TestTask.Controllers
     public class MainController : ControllerBase
     {
         [HttpPost]
-        async public Task<IActionResult> GetQuery(CancellationToken cancellationToken, [FromBody] IEnumerable<int> array)
+        public async Task<IActionResult> GetQuery(CancellationToken cancellationToken, [FromBody] List<int> array)
         {
             array.BubbleSort();
             return Ok(array);

@@ -2,13 +2,12 @@
 {
     public static class Sorter
     {
-        public static void BubbleSort(this IEnumerable<int> anArray)
+        public static void BubbleSort(this List<int> array)
         {
-            var array = anArray.ToArray();
             var tmp = 0;
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Count; i++)
             {
-                for (int j = 0; j < array.Length - 1 - i; j++)
+                for (int j = 0; j < array.Count - 1 - i; j++)
                 {
                     if (array[j] > array[j + 1])
                     {
