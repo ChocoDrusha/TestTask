@@ -2,8 +2,9 @@
 {
     public static class Sorter
     {
-        public static void BubbleSort(this int[] array)
+        public static void BubbleSort(this IEnumerable<int> anArray)
         {
+            var array = anArray.ToArray();
             var tmp = 0;
             for (int i = 0; i < array.Length; i++)
             {
