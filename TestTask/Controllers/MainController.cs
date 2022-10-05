@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TestTask.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/sort")]
     [ApiController]
     public class MainController : ControllerBase
     {
